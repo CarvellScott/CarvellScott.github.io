@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "I have no idea what I'm doing"
+title:  "I'm making a blog!"
 author: Carvell
 ---
+I have no idea what I'm doing
 
-I'm making a blog!
-
-Useful content to come later, probably.
+Useful content to come later, for now I'm trial-and-erroring my way through configuring this.
+It's nice that I can do practically everything in markdown.
 
 EDITS (read: lessons learned) in chronological order:
 1. I should probably put my name as the author on my posts.
