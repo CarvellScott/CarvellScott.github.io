@@ -1,4 +1,4 @@
-#Bash completion with Python
+# Bash completion with Python
 
 ## A bit of background
 
