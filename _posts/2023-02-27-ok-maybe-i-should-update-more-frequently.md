@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ok, maybe I should update more frequently"
-author: Carvell
+author: cscott
 ---
 
 Wow. A little over 4 years and the only things of interest I've put here are a few hidden urls for experiments. Yet a lot has happened in those years.
