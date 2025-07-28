@@ -2,24 +2,13 @@
 layout: default
 title: Blog
 ---
-<h1>Latest Posts</h1>
-
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      <p>{{ post.excerpt }}</p>
-    </li>
-  {% endfor %}
-</ul>
-
 <h1>Tutorials and random stuff I learned</h1>
 
-{% for tutorial in site.tutorials %}
-    <h2>
-        <a href="{{ tutorial.url }}">
-            {{ tutorial.title }}
-        </a>
-    </h2>
-    <p>{{ tutorial.excerpt}}</p>
-{% endfor %}
+<ul>
+    {% for tutorial in site.tutorials %}
+        <li>
+        <h2><a href="{{ tutorial.url }}"> {{ tutorial.title }} </a></h2>
+        <p>{{ tutorial.excerpt}}</p>
+        </li>
+    {% endfor %}
+</ul>
