@@ -1,2 +1,5 @@
 theme: jekyll-theme-hacker
 title: c-scott-code
+collections:
+  tutorials:
+    output: true

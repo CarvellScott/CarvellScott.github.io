@@ -12,3 +12,14 @@ title: Blog
     </li>
   {% endfor %}
 </ul>
+
+<h1>Tutorials and random stuff I learned</h1>
+
+{% for tutorial in site.tutorials %}
+    <h2>
+        <a href="{{ tutorial.url }}">
+            {{ tutorial.title }}
+        </a>
+    </h2>
+    <p>{{ tutorial.excerpt}}</p>
+{% endfor %}
