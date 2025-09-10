@@ -87,9 +87,10 @@ highlight-style: haddock
 
 ### Other honorable mentions
 
+- iconv: `#!/usr/bin/env iconv -S -o destination` will let you copy the file with the shebang to its appropriate destination, kinda like `cp` but with the args reversed. Pretty nice to just have a built-in one-word autocomplete instead of having to type two file paths.
 - ssh: Your config at ~/.ssh/config can benefit from a shebang, but the spec has enough per-host configuration that you likely don't need multiple versions.
 - curl: `#!/usr/bin/env -S curl -K` lets you specify an ini-like syntax to override command line parameters. This extends the functionality from stuff that runs on your system to whatever public APIs are out there on the internet.
-- vim: Vim's quickfix files have a simple syntax of `{line_number}:{filepath}:{arbitrary_notes}` that lends itself to being programmatically generated; e.g. if you wanna find all TODOs in your files. The shebang line `#!/usr/bin/env -S vim -q` is useful for them. Vim 9.1 and onward can use `#!/usr/bin/env -S vim -S` to start vim with a number of pre-configured options.
+- vim: Vim 9.1 and onward can use `#!/usr/bin/env -S vim -S` to start vim with a number of pre-configured options. Pretty useful if you share an account on a system with others and you don't want to torture others with your weird vim settings.
 
 There's likely hundreds more filetypes to be found in your IDE's syntax-highlighting settings. `grep 'comments.*#' /usr/share/vim/*/ftplugin/*.vim` gives me a ton. Let's go a bit farther and make our own formats.
 
