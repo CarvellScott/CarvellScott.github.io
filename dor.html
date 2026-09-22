@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Dangerous Open Redirect</title>
+        <script type="text/javascript">
+            const from_url = new URL(window.location);
+            const to_url = new URL(from_url.searchParams.get("url"));
+            window.location.replace(to_url.toString());
+        </script>
+    </head>
+    <body>
+      <p> Good thing you have javascript disabled, this page contains an <a href="https://community.owasp.org/attacks/open_redirect">open redirect vulnerability.</a></p>
+      <p> I'm technically exploiting this to make managing my NFC tag urls easier without having to set up DNS or manage /etc/hosts.</p>
+    </body>
+</html>
