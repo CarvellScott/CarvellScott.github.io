@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+      function tryRedirect() {
+        const url = new URL(window.location);
+        console.log("url is " + url.toString());
+        const key = url.searchParams.get("id");
+        console.log("key is " + key);
+        const loc = document.getElementById(key).href;
+        window.location.replace(loc);
+      }
+      document.addEventListener("DOMContentLoaded", (event) => {
+        tryRedirect();
+      })
+    </script>
+</head>
+<body>
+    <div>
+        If you are reading this, you either have Javascript disabled or the id of one of the links below doesn't match what was in the URL.
+    </div>
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Link</th>
+        </tr>
+            <tr>
+                <td>
+                  <a id="apple_chips" href="https://www.amazon.com/Seneca-Cinnamon-Delicious-Orchards-Perfection/dp/B0977P8GNL/">Apple Chips</a>
+                </td>
+                <td>
+                    <a href=/items/apple_chips>Info</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <a id="apple_cinnamon_oatmeal" href="https://www.heb.com/product-detail/h-e-b-instant-oatmeal-apple-cinnamon/6311636">Apple Cinnamon Oatmeal</a>
+                </td>
+                <td>
+                    <a href=/items/apple_cinnamon_oatmeal>Info</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <a id="applesauce" href="https://www.heb.com/product-detail/h-e-b-unsweetened-applesauce-cups-6-ct/127847">Applesauce</a>
+                </td>
+                <td>
+                    <a href=/items/applesauce>Info</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <a id="bbq_sauce" href="https://www.heb.com/product-detail/sweet-baby-ray-s-sweet-teriyaki-sauce-marinade/1964758">BBQ Sauce</a>
+                </td>
+                <td>
+                    <a href=/items/bbq_sauce>Info</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <a id="bananas" href="https://www.heb.com/product-detail/fresh-bunch-of-bananas-4-7-bananas-avg-2-4-lbs/377497">Bananas</a>
+                </td>
+                <td>
+                    <a href=/items/bananas>Info</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <a id="bar_keepers_friend" href="https://www.heb.com/product-detail/bar-keepers-friend-soft-cleanser-26-oz/1700623">Bar Keepers Friend</a>
+                </td>
+                <td>
+                    <a href=/items/bar_keepers_friend>Info</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <a id="beard_butter" href="https://www.heb.com/product-detail/every-man-jack-beard-butter-sandalwood-4-oz/3705521">Beard butter</a>
+                </td>
+                <td>
+                    <a href=/items/beard_butter>Info</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <a id="bleach" href="https://www.heb.com/product-detail/hill-country-fare-bleach-regular-64-oz/3502021">Bleach</a>
+                </td>
+                <td>
+                    <a href=/items/bleach>Info</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <a id="bread" href="https://www.heb.com/product-detail/h-e-b-split-top-honey-wheat-enriched-bread-20-oz/672610">Bread</a>
+                </td>
+                <td>
+                    <a href=/items/bread>Info</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <a id="brownie_bites" href="https://www.heb.com/product-detail/h-e-b-bakery-two-bite-brownies-12-oz/1875958">Brownie Bites</a>
+                </td>
+                <td>
+                    <a href=/items/brownie_bites>Info</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <a id="butter" href="https://www.heb.com/product-detail/land-o-lakes-salted-butter-balls/9499009">Butter</a>
+                </td>
+                <td>
+                    <a href=/items/butter>Info</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <a id="cheese" href="https://www.heb.com/product-detail/h-e-b-singles-swiss-sliced-cheese-nbsp-16-ct/125669">Cheese</a>
+                </td>
+                <td>
+                    <a href=/items/cheese>Info</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <a id="cheesecake" href="https://www.heb.com/product-detail/the-father-s-table-strawberry-swirl-cheesecake/459471">Cheesecake</a>
+                </td>
+                <td>
+                    <a href=/items/cheesecake>Info</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <a id="cinnamon_coated_almonds" href="https://www.heb.com/product-detail/h-e-b-churro-cinnamon-sugar-coated-roasted-blanched-almonds/2799048">Cinnamon Coated Almonds</a>
+                </td>
+                <td>
+                    <a href=/items/cinnamon_coated_almonds>Info</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <a id="cotton_candy_grapes" href="https://www.heb.com/product-detail/fresh-cotton-candy-grapes/1717829">Cotton Candy Grapes</a>
+                </td>
+                <td>
+                    <a href=/items/cotton_candy_grapes>Info</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <a id="dandruff_shampoo" href="https://www.amazon.com/dp/B07BY7VJVP">Dandruff Shampoo</a>
+                </td>
+                <td>
+                    <a href=/items/dandruff_shampoo>Info</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <a id="deodorant" href="https://www.heb.com/product-detail/axe-aluminum-free-deodorant-solid-apollo-3-oz/1639132">Deodorant</a>
+                </td>
+                <td>
+                    <a href=/items/deodorant>Info</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <a id="dishwasher_pods" href="https://www.heb.com/product-detail/cascade-platinum-plus-dishwasher-pods-fresh-scent-57-ct/9038010">Dishwasher Pods</a>
+                </td>
+                <td>
+                    <a href=/items/dishwasher_pods>Info</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <a id="distilled_white_vinegar" href="https://www.heb.com/product-detail/hill-country-fare-distilled-white-vinegar/125551">Distilled White Vinegar</a>
+                </td>
+                <td>
+                    <a href=/items/distilled_white_vinegar>Info</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <a id="eggs" href="https://www.heb.com/product-detail/hill-country-fare-grade-a-large-white-eggs-12-ct/313762">Eggs</a>
+                </td>
+                <td>
+                    <a href=/items/eggs>Info</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <a id="english_cucumbers" href="https://www.heb.com/product-detail/fresh-seedless-cucumber/319426">English Cucumbers</a>
+                </td>
+                <td>
+                    <a href=/items/english_cucumbers>Info</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <a id="frozen_broccoli" href="https://www.heb.com/product-detail/h-e-b-frozen-broccoli-florets/545932">Frozen Broccoli</a>
+                </td>
+                <td>
+                    <a href=/items/frozen_broccoli>Info</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <a id="frozen_carrots" href="https://www.heb.com/product-detail/green-giant-restaurant-style-honey-glazed-carrots-with-sage-butter/10563531">Frozen Carrots</a>
+                </td>
+                <td>
+                    <a href=/items/frozen_carrots>Info</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <a id="green_beans" href="https://www.heb.com/product-detail/h-e-b-frozen-cut-green-beans-40-oz/587567">Green beans</a>
+                </td>
+                <td>
+                    <a href=/items/green_beans>Info</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <a id="hamburgers" href="https://www.heb.com/product-detail/h-e-b-fully-cooked-frozen-original-beef-burgers-6-ct/2043063">Hamburgers</a>
+                </td>
+                <td>
+                    <a href=/items/hamburgers>Info</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <a id="iron_supplements" href="https://www.heb.com/product-detail/nature-made-iron-vitamin-c-adult-gummies/4330777">Iron Supplements</a>
+                </td>
+                <td>
+                    <a href=/items/iron_supplements>Info</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <a id="jelly" href="https://www.heb.com/product-detail/smucker-s-squeeze-grape-jelly-20-oz/456773">Jelly</a>
+                </td>
+                <td>
+                    <a href=/items/jelly>Info</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <a id="laundry_detergent" href="https://www.heb.com/product-detail/gain-aroma-boost-he-liquid-laundry-detergent-128-loads-original/9095524">Laundry detergent</a>
+                </td>
+                <td>
+                    <a href=/items/laundry_detergent>Info</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <a id="milk" href="https://www.heb.com/product-detail/h-e-b-mootopia-lactose-free-2-reduced-fat-milk-1-2-gal/671076">Milk</a>
+                </td>
+                <td>
+                    <a href=/items/milk>Info</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <a id="oranges" href="https://www.heb.com/product-detail/fresh-cara-cara-navel-orange/375170">Oranges</a>
+                </td>
+                <td>
+                    <a href=/items/oranges>Info</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <a id="peanut_butter" href="https://www.heb.com/product-detail/jif-creamy-peanut-butter-4-lb/6029501">Peanut Butter</a>
+                </td>
+                <td>
+                    <a href=/items/peanut_butter>Info</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <a id="reese_s_cups" href="https://www.heb.com/product-detail/reese-s-snack-size-peanut-butter-cups-halloween-candy-40-pc/15363020">Reese&#039;s Cups</a>
+                </td>
+                <td>
+                    <a href=/items/reese_s_cups>Info</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <a id="rice" href="https://www.heb.com/product-detail/h-e-b-long-grain-white-enriched-rice-5-lb/125348">Rice</a>
+                </td>
+                <td>
+                    <a href=/items/rice>Info</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <a id="sweet_potatoes" href="https://www.heb.com/product-detail/h-e-b-fresh-sweet-potatoes/1622294">Sweet Potatoes</a>
+                </td>
+                <td>
+                    <a href=/items/sweet_potatoes>Info</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <a id="toothpaste" href="https://www.heb.com/product-detail/colgate-optic-white-nbsp-anticavity-toothpaste-clean-mint-4-2-oz/2203292">Toothpaste</a>
+                </td>
+                <td>
+                    <a href=/items/toothpaste>Info</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <a id="twix_bars" href="https://www.heb.com/product-detail/twix-milk-chocolate-caramel-cookie-fun-size-candy-bars-10-83-oz/740756">Twix Bars</a>
+                </td>
+                <td>
+                    <a href=/items/twix_bars>Info</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <a id="vanilla_milk" href="https://www.heb.com/product-detail/h-e-b-mootopia-lactose-free-reduced-fat-2-vanilla-milk/1640462">Vanilla Milk</a>
+                </td>
+                <td>
+                    <a href=/items/vanilla_milk>Info</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <a id="water_softener_salt" href="https://www.homedepot.com/p/Diamond-Crystal-Solar-Naturals-Water-Softener-Salt-Crystals-100012454/100172669">Water Softener Salt</a>
+                </td>
+                <td>
+                    <a href=/items/water_softener_salt>Info</a>
+                </td>
+            </tr>
+    </table>
+</body>
+</html>
