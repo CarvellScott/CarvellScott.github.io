@@ -17,14 +17,12 @@ title: Projects
 
 ## Other Projects
 
-### The Oven of Eden
+### Cooking for Coders
 
-- **Project Title:** The Oven of Eden
-- **Description:**  
-  A publishing workflow built around Markdown and Pandoc for producing multiple versions of my Mom's recipe book, "The Oven of Eden". Formats include an interactive single-page webapp, a printed copy, a progressive web app I installed on her phone, and finally an Amazon Kindle-compatible e-book format. She wants to keep her recipes secret, so the repo is going to contain a version with random recipes from the internet I like.
-  to adapt navigation and presentation to each output format.
-- **Live Demo:** N/A
-- **Source Code:** Coming Soon!
+- **Project Title:** Cooking for Coders
+- **Description:** A publishing workflow built around Markdown and Pandoc for producing multiple versions of my Mom's recipe book, "The Oven of Eden". Formats include an interactive single-page webapp, a printed copy, a progressive web app I installed on her phone, and finally an Amazon Kindle-compatible e-book format. She wants to keep her recipes secret, so this repo is going to contain a version with random recipes I like instead.
+- **Live Demo:** [here](/cooking_for_coders.html)
+- **Source Code:** <https://github.com/CarvellScott/cooking_for_coders.git>
 - **Screenshots/Videos:** Coming Soon?
 
 

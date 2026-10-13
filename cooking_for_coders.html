@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Rudolph Carvell Scott II" />
+  <title>Cooking for Coders</title>
+  <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+  <style type="text/css">:root {
+--link-color: #666;
+--bg-color: white;
+--text-color: black;
+--font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+font-size: clamp(16px, 1rem + 0.25vw, 18px); 
+}
+@media (prefers-color-scheme: dark) {
+:root {
+--link-color: #7ab8ff;
+--bg-color: #111;
+--text-color: #ddd;
+}
+}
+* { box-sizing: border-box; }
+a {
+color: var(--text-color);
+}
+a:hover, a:focus, a:active {
+text-decoration: underline;
+color: var(--link-color);
+}
+body {
+max-width: 42rem;
+width: 100%;
+display: flex;
+flex-direction: column;
+font-family: var(--font-family);
+color: var(--text-color);
+margin: 0px auto;
+background: var(--bg-color);
+padding: 20px;
+padding-top: 0px;
+line-height: 1.6;
+}
+h1, h2, h3 {
+line-height:1.2;
+break-after: avoid;
+}
+header {
+text-align: center;
+}
+ul, ol {
+break-inside: avoid;
+}
+
+.level1 {
+display: none;
+}
+
+.level1:target {
+display: block;
+}
+body > section {
+width: 100%;
+flex-grow: 1;
+flex-basis: auto;
+}
+
+.toc-checkbox {
+display: none;
+}
+
+@media not print {
+.toc-button {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background: #222;
+color: white;
+padding: 12px 20px;
+border-radius: 50px;
+cursor: pointer;
+z-index: 1001;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+font-family: sans-serif;
+font-weight: bold;
+transition: transform 0.2s ease;
+}
+.toc-button:hover {
+transform: scale(1.05);
+background: #444;
+}
+
+#TOC {
+position: fixed;
+bottom: 80px;
+right: 20px;
+width: 300px;
+max-width: 80vw;
+max-height: 60vh; border: 1px solid #ddd;
+border-radius: 12px;
+padding: 20px;
+box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+z-index: 1000;
+overflow-y: auto;
+background: var(--bg-color);
+visibility: hidden;
+opacity: 0;
+pointer-events: none;
+transform: translateY(20px);
+transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.toc-checkbox:checked ~ #TOC {
+visibility: visible;
+opacity: 1;
+pointer-events: auto;
+transform: translateY(0);
+}
+}
+#TOC ul {
+list-style: none;
+padding-left: 0;
+margin: 0;
+}
+#TOC li {
+margin-bottom: 8px;
+}
+#TOC a {
+text-decoration: none;
+}
+#TOC a:hover {
+text-decoration: underline;
+}
+#TOC::before {
+content: "Contents";
+display: block;
+font-weight: bold;
+font-size: 1.2rem;
+margin-bottom: 15px;
+border-bottom: 2px solid #ddd;
+padding-bottom: 5px;
+}
+@media print {
+:root {
+--bg-color: white;
+--text-color: black;
+}
+body {
+display: block;
+}
+#title-block-header {
+break-after: page;
+}
+nav {
+break-before: page;
+}
+.level1 {
+display: block;
+break-before: page;
+padding: 0;
+}
+.toc-button {
+display: none;
+}
+}
+</style>
+  <style type="text/css">:root {
+--link-color: #666;
+--bg-color: white;
+--text-color: black;
+--font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+font-size: clamp(16px, 1rem + 0.25vw, 18px); 
+}
+@media (prefers-color-scheme: dark) {
+:root {
+--link-color: #7ab8ff;
+--bg-color: #111;
+--text-color: #ddd;
+}
+}
+* { box-sizing: border-box; }
+a {
+color: var(--text-color);
+}
+a:hover, a:focus, a:active {
+text-decoration: underline;
+color: var(--link-color);
+}
+body {
+max-width: 42rem;
+width: 100%;
+display: flex;
+flex-direction: column;
+font-family: var(--font-family);
+color: var(--text-color);
+margin: 0px auto;
+background: var(--bg-color);
+padding: 20px;
+padding-top: 0px;
+line-height: 1.6;
+}
+h1, h2, h3 {
+line-height:1.2;
+break-after: avoid;
+}
+header {
+text-align: center;
+}
+ul, ol {
+break-inside: avoid;
+}
+
+.level1 {
+display: none;
+}
+
+.level1:target {
+display: block;
+}
+body > section {
+width: 100%;
+flex-grow: 1;
+flex-basis: auto;
+}
+
+.toc-checkbox {
+display: none;
+}
+
+@media not print {
+.toc-button {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background: #222;
+color: white;
+padding: 12px 20px;
+border-radius: 50px;
+cursor: pointer;
+z-index: 1001;
+box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+font-family: sans-serif;
+font-weight: bold;
+transition: transform 0.2s ease;
+}
+.toc-button:hover {
+transform: scale(1.05);
+background: #444;
+}
+
+#TOC {
+position: fixed;
+bottom: 80px;
+right: 20px;
+width: 300px;
+max-width: 80vw;
+max-height: 60vh; border: 1px solid #ddd;
+border-radius: 12px;
+padding: 20px;
+box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+z-index: 1000;
+overflow-y: auto;
+background: var(--bg-color);
+visibility: hidden;
+opacity: 0;
+pointer-events: none;
+transform: translateY(20px);
+transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.toc-checkbox:checked ~ #TOC {
+visibility: visible;
+opacity: 1;
+pointer-events: auto;
+transform: translateY(0);
+}
+}
+#TOC ul {
+list-style: none;
+padding-left: 0;
+margin: 0;
+}
+#TOC li {
+margin-bottom: 8px;
+}
+#TOC a {
+text-decoration: none;
+}
+#TOC a:hover {
+text-decoration: underline;
+}
+#TOC::before {
+content: "Contents";
+display: block;
+font-weight: bold;
+font-size: 1.2rem;
+margin-bottom: 15px;
+border-bottom: 2px solid #ddd;
+padding-bottom: 5px;
+}
+@media print {
+:root {
+--bg-color: white;
+--text-color: black;
+}
+body {
+display: block;
+}
+#title-block-header {
+break-after: page;
+}
+nav {
+break-before: page;
+}
+.level1 {
+display: block;
+break-before: page;
+padding: 0;
+}
+.toc-button {
+display: none;
+}
+}
+</style>
+</head>
+<body>
+<input type="checkbox" id="toc-toggle" class="toc-checkbox">
+<label for="toc-toggle" class="toc-button">☰ Table of Contents</label>
+<header id="title-block-header">
+<h1 class="title">Cooking for Coders</h1>
+<p class="subtitle">A composition of my favorite recipes. Made with ❤️
+(and pandoc, html5, css3, etc...)</p>
+<p class="author">Rudolph Carvell Scott II</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#foreword" id="toc-foreword">Foreword</a></li>
+<li><a href="#yogurt-bread" id="toc-yogurt-bread">Yogurt Bread</a></li>
+</ul>
+</nav>
+<section id="foreword" class="level1">
+<h1>Foreword</h1>
+<p>For my Mom, Maurica Scott, whose love, faith, and inspiration made me
+into the man I am today.</p>
+<p>This is a compilation of my Mom’s favorite recipes. It started as an
+attempt at making a recipe book, then started to evolve into a web page
+before I realized the complexity of trying to turn it into a single-page
+offline-only page was competing with the complexity of establishing
+consistency between these recipes. In the end, simplicity won out and I
+went with something Mom could laminate. :)</p>
+<p>This labor of love was made with pandoc, html5, and css3. I tell ya,
+the web version’s better with a fancy menu that jumps to individual
+recipes, but I gotta work on figuring out a means of privately
+distributing a .html file for that to work…</p>
+</section>
+<section id="yogurt-bread" class="level1">
+<h1>Yogurt Bread</h1>
+<p>This is one of the first recipes I learned that is “actual cooking”
+but it’s still easy enough that it’s hard to screw up.</p>
+<section id="info" class="level2">
+<h2>Info</h2>
+<ul>
+<li><strong>Prep time:</strong> 5m</li>
+<li><strong>Cook time:</strong> 40m</li>
+<li><strong>Servings:</strong> 10</li>
+</ul>
+</section>
+<section id="tools" class="level2">
+<h2>Tools</h2>
+<ul>
+<li>8x4 in. loaf pan</li>
+<li>Large Mixing bowl</li>
+</ul>
+</section>
+<section id="ingredients" class="level2">
+<h2>Ingredients</h2>
+<ul class="task-list">
+<li><label><input type="checkbox"></input>3 cups [self-rising
+flour][self_rising_flour]</label></li>
+<li><label><input type="checkbox"></input>1.75 cups [low fat vanilla
+yogurt][low_fat_vanilla_yogurt]</label></li>
+</ul>
+</section>
+<section id="steps" class="level2">
+<h2>Steps</h2>
+<ol type="1">
+<li>Preheat your oven to 375 ° F. Line an 8x4 inch loaf pan with
+parchment paper.</li>
+<li>Mix the flour and yogurt in a large bowl until the flour is
+completely incorporated. This is easily the longest step.</li>
+<li>Pour the batter into the 8x4 inch loaf pan and bake for 35
+minutes.</li>
+<li>Remove the pan from the oven and let the bread sit in the pan for an
+additional 5 minutes before transferring it to a wire rack to
+fully-cool.</li>
+</ol>
+</section>
+<section id="notes" class="level2">
+<h2>Notes</h2>
+<ul>
+<li>Making sure the flour and yogurt mix together is the most important
+part. Otherwise when you bake the bread, the center will likely still be
+moist and/or gooey.</li>
+</ul>
+<!--
+This is the ingredient index. If there's a broken link in the ingredients of a recipe, it probably wasn't added here.
+This can probably stand to be auto-generated somehow
+Fow now, when adding new entries, just select them in vim and use `:s/.*/[&]: https:\/\/heb.com\/search?q=&/` to format them.
+Be sure to replace spaces in the link with pluses.
+-->
+</section>
+</section>
+</body>
+</html>
